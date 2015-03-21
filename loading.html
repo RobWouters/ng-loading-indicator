@@ -1,0 +1,24 @@
+<div class="loading-indicator" ng-show="state()"
+    ng-switch on="state()">
+    <div ng-switch-when="get">
+        <img src="/s/img/loading.gif">
+    </div>
+    <div ng-switch-when="post">
+        Opslaan...
+    </div>
+    <div ng-switch-when="post-success" class="success">
+        Opslaan... gelukt!
+    </div>
+    <div ng-switch-when="post-failed" class="failed">
+        Opslaan... mislukt!
+    </div>
+    <div ng-switch-when="delete">
+        Verwijderen...
+    </div>
+    <div ng-switch-when="delete-success" class="success">
+        Verwijderen... gelukt!
+    </div>
+    <div ng-switch-when="delete-failed" class="failed">
+        Verwijderen... mislukt!
+    </div>
+</div>
