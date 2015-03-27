@@ -5,7 +5,7 @@ Angular Module to automatically display loading indicator based on type of curre
 
 Add to app dependencies:
 
-    angular.module('app', ['loading.indicator'])
+    angular.module('app', ['ngLoadingIndicator'])
 
 Add HTML:
 

@@ -1,0 +1,16 @@
+{
+  "name": "ng-loading-indicator",
+  "version": "0.0.1",
+  "main": "./loading.js",
+  "description": "Angular Module to automatically display loading indicator based on type of current running HTTP requests.",
+  "keywords": [
+    "javascript",
+    "angular"
+  ],
+  "dependencies": {
+    "angular": "~1"
+  },
+  "author": {
+    "name": "Rob Wouters"
+  }
+}

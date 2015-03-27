@@ -1,4 +1,4 @@
-module = angular.module 'loading.indicator', []
+module = angular.module 'ngLoadingIndicator', []
 
 module.config ($httpProvider) ->
     # Loading hooks
