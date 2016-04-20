@@ -1,0 +1,23 @@
+{
+  "name": "ng-loading-indicator",
+  "version": "0.0.1",
+  "description": "Angular Module to automatically display loading indicator based on type of current running HTTP requests.",
+  "main": "loading.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobWouters/ng-loading-indicator.git"
+  },
+  "keywords": [
+    "javascript",
+    "angular"
+  ],
+  "author": "Rob Wouters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobWouters/ng-loading-indicator/issues"
+  },
+  "homepage": "https://github.com/RobWouters/ng-loading-indicator#readme"
+}
