@@ -12,13 +12,16 @@ module.config ($httpProvider) ->
                 'post'
 
         request: (config) ->
-            Loading.start getType config
+            if not config.skipLoadingIndicator
+                Loading.start getType config
             config
         response: (res) ->
-            Loading.stop true, getType res.config
+            if not res.config.skipLoadingIndicator
+                Loading.stop true, getType res.config
             res
         responseError: (rej) ->
-            Loading.stop false, getType rej.config
+            if not rej.config.skipLoadingIndicator
+                Loading.stop false, getType rej.config
             $q.reject rej
     $httpProvider.interceptors.push interceptor
 

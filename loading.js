@@ -19,15 +19,21 @@
       };
       return {
         request: function(config) {
-          Loading.start(getType(config));
+          if (!config.skipLoadingIndicator) {
+            Loading.start(getType(config));
+          }
           return config;
         },
         response: function(res) {
-          Loading.stop(true, getType(res.config));
+          if (!res.config.skipLoadingIndicator) {
+            Loading.stop(true, getType(res.config));
+          }
           return res;
         },
         responseError: function(rej) {
-          Loading.stop(false, getType(rej.config));
+          if (!rej.config.skipLoadingIndicator) {
+            Loading.stop(false, getType(rej.config));
+          }
           return $q.reject(rej);
         }
       };
